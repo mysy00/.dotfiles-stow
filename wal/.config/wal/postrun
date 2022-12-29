@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source "${HOME}/.cache/wal/colors.sh"
+
+mkdir -p  "${HOME}/.config/zathura"
+ln -sf    "${HOME}/.cache/wal/zathurarc"    "${HOME}/.config/zathura/zathurarc"
+
+xrdb -merge ~/.cache/wal/colors.Xresources &
+
